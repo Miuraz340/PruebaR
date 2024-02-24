@@ -1,0 +1,18 @@
+# Script de ejemplo para R Studio
+
+# Cargar bibliotecas
+library(ggplot2)
+
+# Crear datos de muestra
+set.seed(123)
+datos <- data.frame(
+  x = rnorm(100),
+  y = rnorm(100)
+)
+
+# Crear gráfico de dispersión
+ggplot(datos, aes(x = x, y = y)) +
+  geom_point() +
+  ggtitle("Gráfico de Dispersión de Ejemplo") +
+  xlab("Eje X") +
+  ylab("Eje Y")
